@@ -8,10 +8,10 @@ const Modal = ({ close, setClose }) => {
 
     return (
         <div className={`${close ? "fixed" : "hidden"} top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-full max-h-full bg-gray-600 bg-opacity-50`}>
-            <div className="relative w-full max-w-2xl max-h-full m-auto mt-[15%]">
+            <div className="relative w-full max-w-xl max-h-full m-auto mt-[15%]">
                 <div className="relative bg-white rounded-lg shadow">
                     <div className="flex items-start justify-between p-4 pt-8">
-                        <h3 className="text-[1.7rem] font-semibold ml-[7em] text-gray-900">
+                        <h3 className="lg:text-[1.7rem] text-[1.3rem] font-semibold lg:ml-[5em] ml-[2em] text-gray-900">
                             Tell me more about you
                         </h3>
                         <button onClick={click} type="button" className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center" data-modal-hide="defaultModal">
